@@ -29,13 +29,13 @@
 }
 .contact h1{
     text-align: center;
-    font-family: Font4;
+    font-family: Font2;
     margin-bottom: 15px;
 }
 
 .contact-details {
     margin-left: 30px;
-    font-family: Font5;
+    font-family: Font3;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -154,100 +154,72 @@
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
-    .contact {
-        float: left;
+    .contact-details a {
+        font-size: 2vh;
     }
     .social {
-        margin-top: 0px;
-        padding-top: 50px;
+        margin-top: 20px;
+        padding-top: 20px;
         text-align: center;
     }
     .list-inline {
         clear: left;
-        margin-top: 50px;
-    }
-    
+        margin-top: 10px;
+    }   
 }
 
 
 /********** Extra small devices only **********/
-@media (max-width: 767px) {
-    .contact {
-        float: left;
+@media (min-width: 480px) and (max-width: 767px) {
+    .contact h1 {
+        font-size: 5vh;
     }
-    .contact-details a{
-        text-decoration: none;
+    .contact-details a::after{
         font-size: 2.3vh;
-        color: #313638;
+        content: "\a";
+        white-space: pre;
+        text-align: center;
     }
-    .footer-basic .social > a {
-        font-size:24px;
-        width:45px;
-        height:45px;
-        line-height:50px;
-        display:inline-block;
-        text-align:center;
-        border-radius:50%;
-        border:1px solid #ccc;
-        margin:0 8px;
-        color:inherit;
-        opacity:0.75;
+    .contact-details {
+        margin-top: 30px;
     }
     .social {
         margin-top: 0px;
-        padding-top: 50px;
+        padding-top: 20px;
         text-align: center;
-    }
-    .list-inline {
-        clear: left;
-        margin-top: 50px;
     }
     .list-inline a {
         font-size: 2.3vh;
-    }
-    .footer-basic .copyright {
-        margin-top:8px;
-        text-align:center;
-        font-size:10px;
-        color:#aaa;
-        margin-bottom:0;
-    }
+    }    
 }
 
 
 /********** Super extra small devices Only **********/
 @media (max-width: 479px) {
-    .contact {
-        float: left;
+    .contact h1 {
+        font-size: 4vh;
     }
-    .contact-details a{
-        text-decoration: none;
-        font-size: 1.5vh;
-        color: #313638;
+    .contact-details a::after{
+        font-size: 2vh;
+        content: "\a";
+        white-space: pre;
+        text-align: center;
+    }
+    .contact-details {
+        margin-top: 30px;
     }
     .social {
-        clear: left;
-        margin-top: 10px;
+        margin-top: 0px;
         padding-top: 20px;
+        text-align: center;
     }
-    .footer-basic .social > a {
-        font-size:24px;
-        width:45px;
-        height:45px;
-        line-height:50px;
-        display:inline-block;
-        text-align:center;
-        border-radius:50%;
-        border:1px solid #ccc;
-        margin:0 8px;
-        color:inherit;
-        opacity:0.75;
+    .list-inline a {
+        font-size: 2.3vh;
     }
     .list-inline {
         padding-top: 0px;
         list-style: none;
         margin-top: 5px;
         display: grid;
-    }
-    
+    }   
 }
