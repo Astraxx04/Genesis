@@ -1,24 +1,56 @@
+@font-face {
+    font-family: Font1;
+    src: url('fonts/Futura\ Bold\ Italic\ font.ttf');
+}
+@font-face {
+    font-family: Font2;
+    src: url('fonts/Futura\ Book\ font.ttf');
+}
+@font-face {
+    font-family: Font3;
+    src: url('fonts/Futura\ Light\ Italic\ font.ttf');
+}
+@font-face {
+    font-family: Font4;
+    src: url('fonts/futura\ medium\ bt.ttf');
+}
+@font-face {
+    font-family: 'Font5';
+    src: url('fonts/Valorant\ Font.ttf');
+}
+
+
+
 
 .contact {
     font-family: 'Times New Roman', Times, serif;
     margin-left: 10px;
-    color: #313638;
+    color: #ffffff;
+}
+.contact h1{
+    text-align: center;
+    font-family: Font4;
+    margin-bottom: 15px;
 }
 
 .contact-details {
     margin-left: 30px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Font5;
+    text-align: center;
+    margin-bottom: 20px;
 }
 .contact-details a{
     text-decoration: none;
     font-size: 20px;
-    color: #313638;
+    color: #ffffff;
+    text-align: center;
+    margin-right: 40px;
 }
 
 .footer-basic {
     padding:10px 0px 0px;
-    background-color:#ffffff;
-    color:#313638;
+    background-color:#202020;
+    color:#ffffff;
 }
   
 .footer-basic ul {
@@ -28,6 +60,7 @@
     font-size:20px;
     line-height:1.6;
     margin-bottom:0;
+    font-family: 'Font5';
 }
   
 .footer-basic li {
@@ -49,7 +82,7 @@
     padding-bottom:10px;
 }
   
-.footer-basic .social > a {
+.insta a {
     font-size:24px;
     width:60px;
     height:60px;
@@ -62,13 +95,55 @@
     color:inherit;
     opacity:0.75;
 }
-  
-.footer-basic .social > a:hover {
-    opacity:0.6;
-    color: #69bf27;
+
+.fbook a {
+    font-size:24px;
+    width:60px;
+    height:60px;
+    line-height:65px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+}
+
+.lnkin a {
+    font-size:24px;
+    width:60px;
+    height:60px;
+    line-height:65px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+}
+
+.insta > a:hover{
+    opacity: 1;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fbook > a:hover{
+    opacity: 1;
+    color: #4267b2;
+}
+
+.lnkin > a:hover{
+    opacity: 1;
+    color: #0a66c2;
 }
   
 .footer-basic .copyright {
+    font-family: 'Font5';
     margin-top:15px;
     text-align:center;
     font-size:13px;
